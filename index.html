@@ -5,28 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Premier League Table</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Premier League Table</h1>
-    </header>
-    <table id="league-table">
-      <thead>
-        <tr>
-          <th>Position</th>
-          <th>Team</th>
-          <th>Played</th>
-          <th>Won</th>
-          <th>Drawn</th>
-          <th>Lost</th>
-          <th>Points</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Data will be dynamically inserted here -->
-      </tbody>
-    </table>
+    <h1>Premier League Table</h1>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Club</th>
+            <th>MP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
+            <th>Pts</th>
+            <th>Last 5</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Data will be populated by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="top-scorers">
+      <h2>Top Scorers</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Goals</th>
+            <th>Club</th>
+          </tr>
+        </thead>
+        <tbody id="scorers-body">
+          <!-- Data will be populated by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="about">
+      <h2>About</h2>
+      <p>The Premier League is a professional association football league in England and the highest level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League. <a href="https://en.wikipedia.org/wiki/Premier_League" target="_blank">Wikipedia</a></p>
+      <p><strong>Founded:</strong> 27 May 1992</p>
+    </div>
   </div>
 
   <script src="script.js"></script>
